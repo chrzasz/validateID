@@ -7,6 +7,11 @@ public class VlidatePolishID implements Validator {
 
     @Override
     public boolean validate(String toCheck) {
-        return false;
+
+        if (toCheck.length() != 9) {
+            System.out.println("Not a valid size! Must be 9 characters");
+            return false;
+        }
+        return true;
     }
 }

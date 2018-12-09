@@ -15,19 +15,21 @@ import static org.junit.Assert.assertEquals;
 
 public class VlidatePolishIDTest {
 
-@Test
-@Parameters(method = "validatePolishID")
-public void calculatorTest(String idNo, boolean isOK) {
-    Validator validator = new VlidatePolishID();
-    assertEquals(isOK,validator.validate(idNo) );
-}
+    @Test
+    @Parameters(method = "validatePolishID")
+    public void calculatorTest(String idNo, boolean isOK) {
+        Validator validator = new VlidatePolishID();
+        assertEquals(isOK, validator.validate(idNo));
+    }
 
     public Object[] validatePolishID() {
         return new Object[]{
-                new Object[]{"ABA300000",true},
-                new Object[]{"AAA000000",false},
-                new Object[]{"XZJ538979",true},
-                new Object[]{"XQZ679563",true},
+                new Object[]{"AAA000000", false},
+                new Object[]{"ABA300000", true},
+                new Object[]{"XZJ538979", true},
+                new Object[]{"XQZ679563", true},
+                new Object[]{"ABS 123456", true},
+                new Object[]{"TGH 725413 ", true},
 
         };
     }
