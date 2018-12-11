@@ -32,6 +32,7 @@ public class VlidatePolishIDTest {
                 new Object[]{"AAAAAAAAA", false},
                 new Object[]{"XQZ67956", false},
                 new Object[]{"ASA321321", false},
+                new Object[]{"GRG666666", false},
                 new Object[]{"ABA300000", true},
                 new Object[]{" A B S 1 23  4 56    ", true},
                 new Object[]{"TGH 725413 ", true},

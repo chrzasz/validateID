@@ -43,17 +43,14 @@ public class PolishIDVlidator implements Validator {
         int[] weight = {7, 3, 1, 9, 7, 3, 1, 7, 3};
         int[] lettersToDigits = new int[9];
         for (int i = 0; i < 9; i++) {
-            //numer dowodu osobistego to 6 cyfr z czego pierwsza cyfra to cyfra kontrolna!
-            if (i != 3) {
+
                 lettersToDigits[i] = ltd.letterToDigit(String.valueOf(toCheck.charAt(i)));
                 checkSum[i] = weight[i] * lettersToDigits[i];
                 sumValue += checkSum[i];
-            }
-            // cyfra kontrolna [3]
-            lettersToDigits[3] = ltd.letterToDigit(String.valueOf(toCheck.charAt(3)));
+
         }
 
-        if ((sumValue % 10) != lettersToDigits[3]) {
+        if ((sumValue % 10) != 0) {
             System.out.println("mod 10 error!");
             return false;
         }
