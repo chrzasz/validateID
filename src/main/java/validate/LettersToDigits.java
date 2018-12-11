@@ -7,11 +7,9 @@ import java.util.Set;
 /**
  * Created by Grzegorz Chrzaszczyk on 09-12-2018  10:31 AM
  */
-public class LettersToDigits {
+class LettersToDigits {
 
-    public int letterToDigit(String letter) {
-
-        boolean debug = false;
+    int letterToDigit(String letter) {
 
         letter = letter.toUpperCase();
 
@@ -19,7 +17,17 @@ public class LettersToDigits {
         
         if (letter.length()==1) {
             c = letter.charAt(0);
-            Map<Character, Integer> m1 = new HashMap<Character, Integer>();
+            Map<Character, Integer> m1 = new HashMap<>();
+            m1.put('0', 0);
+            m1.put('1', 1);
+            m1.put('2', 2);
+            m1.put('3', 3);
+            m1.put('4', 4);
+            m1.put('5', 5);
+            m1.put('6', 6);
+            m1.put('7', 7);
+            m1.put('8', 8);
+            m1.put('9', 9);
             m1.put('A', 10);
             m1.put('B', 11);
             m1.put('C', 12);
@@ -41,23 +49,14 @@ public class LettersToDigits {
             m1.put('S', 28);
             m1.put('T', 29);
             m1.put('U', 30);
-            m1.put('W', 31);
-            m1.put('V', 32);
+            m1.put('V', 31);
+            m1.put('W', 32);
             m1.put('X', 33);
             m1.put('Y', 34);
             m1.put('Z', 35);
 
-            if (debug) {
-                System.out.println();
-                System.out.println("Map Elements:");
-                System.out.println(m1);
-                System.out.println("Total map: " + m1.size());
-            }
-
             // Iterate over all map, using the keySet method.
             for (Character key : m1.keySet()) {
-                if (debug)
-                    System.out.println(key + " = " + m1.get(key));
                 if (key == c)
                     return m1.get(key);
             }
