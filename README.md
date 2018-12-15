@@ -1,4 +1,4 @@
-#This is a project for validating polish numbers
+# This is a project for validating polish numbers
 
 
 ## 1. polish ID number
