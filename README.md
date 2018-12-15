@@ -1,7 +1,8 @@
 #This is a project for validating polish numbers
 
 
-##1. polish ID number
+## 1. polish ID number
+[ewalidator.pl](http://ewalidator.pl/generator-numeru-dowodu-osobistego/)
 
 Napisz program, który sprawdzi czy podany numer dowodu osobistego jest poprawny.
 Numer dowodu składa się z trzech liter i sześciu cyfr, z których pierwsza jest cyfrą kontrolną czyli zależy od pozostałych.
@@ -32,7 +33,8 @@ Wagami mogą też być zestawy (1 9 3 7 1 9 3 1 9), (3 7 9 1 3 7 9 3 7), (9 1 7 
 
 
 
-##2. PESEL number
+## 2. PESEL number
+[ewalidator.pl](http://ewalidator.pl/generator-numeru-pesel/)
 
 PESEL jest to skrót od nazwy "Powszechny Elektroniczny System Ewidencji Ludności". Jest to podstawowy rejestr ewidencji ludności w Polsce, a także numer ewidencyjny osoby fizycznej wykorzystywany w tym rejestrze.
 
