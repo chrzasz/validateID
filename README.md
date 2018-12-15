@@ -40,21 +40,22 @@ Każda osoba w Polsce posiada swój unikatowy numer jednoznacznie identyfikując
 
 Numer PESEL składa się z 11 cyfr w których znajdują się następujące dane:
 
-- zakodowana data urodzenia,
-- liczba porządkowa w rejestrze,
-- zakodowana płeć,
-- cyfra kontrolna.
+  * zakodowana data urodzenia,
+  * liczba porządkowa w rejestrze,
+  * zakodowana płeć,
+  * cyfra kontrolna.
 
 ****Zakodowana data urodzenia:****
 
 W numerze PESEL datę urodzenia zapisujemy w następujący sposób: dwie ostatnie cyfry roku, dwucyfrowy zapis numeru miesiąca i dwucyfrowy zapis numeru dnia. Po roku dwutysięcznym pojawił się problem, gdyż było niebezpieczeństwo powtórzenia zapisu cyfrowego dla ludzi urodzonych blisko 100 lat temu. Aby rozwiązać ten problem postanowiono wprowadzić nową metodę kodowania rozwiązująca problem kompleksowo:
 
-dla osób urodzonych w latach 1900 do 1999: miesiąc zapisywany jest w sposób naturalny,
-dla osób urodzonych w innych latach niż 1900 do 1999: w ich przypadku do numeru miesiąca dodawane są następujące wartości:
-dla lat 1800-1899: dodajemy 80,
-dla lat 2000-2099: dodajemy 20,
-dla lat 2100-2199: dodajemy 40,
-dla lat 2200-2299: dodajemy 60.
+  *dla osób urodzonych w latach 1900 do 1999: miesiąc zapisywany jest w sposób naturalny,
+  *dla osób urodzonych w innych latach niż 1900 do 1999: w ich przypadku do numeru miesiąca dodawane są następujące wartości:
+    *dla lat 1800-1899: dodajemy 80,
+    *dla lat 2000-2099: dodajemy 20,
+    *dla lat 2100-2199: dodajemy 40,
+    *dla lat 2200-2299: dodajemy 60.
+
 Taki sposób zapisu pozwala na bezproblemowy zapis daty urodzenia na przestrzeni pięciu stuleci.
 Kolejne miesiące w poszczególnych stuleciach mają następujące numery:
 ```
